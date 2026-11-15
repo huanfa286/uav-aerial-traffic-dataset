@@ -75,14 +75,16 @@ Check the installed Ultralytics version and supported model names before trainin
 
 This dataset is described in the thesis *Research on Small Target Detection Method for UAV Aerial Traffic Scenarios* (无人机航拍交通场景下小目标检测方法研究). The thesis reports a DEF-YOLO mAP@0.5 of 88.3% on its self-built dataset. This is a result reported for that study and is not a guarantee of performance for other implementations or evaluation setups.
 
+The dataset split names are `train`, `val` (validation), and `test`. In the thesis, the three splits contain 1,125, 321, and 162 images, respectively.
+
 ## Downloading
 
 The JPEG files are stored with Git LFS. Install Git LFS before cloning so Git can fetch the image content:
 
 ```bash
 git lfs install
-git clone <REPOSITORY-URL>
-cd <REPOSITORY-DIRECTORY>
+git clone git@github.com:huanfa286/uav-aerial-traffic-dataset.git
+cd uav-aerial-traffic-dataset
 git lfs pull
 ```
 
@@ -95,7 +97,7 @@ No dataset license has been specified. Public visibility on GitHub does not by i
 If you use this dataset, cite the accompanying thesis and include the repository URL and version or commit hash. Complete the bibliographic details below before release:
 
 ```text
-Author. Research on Small Target Detection Method for UAV Aerial Traffic Scenarios.
-Master's thesis, institution, year. (Fill in the verified details.)
-Dataset repository: <REPOSITORY-URL>, version/commit: <VERSION-OR-COMMIT>.
+丁振豪. 面向无人机航拍交通场景的小目标检测方法研究.
+硕士学位论文, 沈阳理工大学. (请根据论文最终版本补充年份。)
+Dataset repository: https://github.com/huanfa286/uav-aerial-traffic-dataset
 ```
